@@ -1,0 +1,102 @@
+@media (max-width: 530px){
+    .container-header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-items {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        align-items: center;
+    }
+    .login{
+        display: none;
+    }
+    .container-menu{
+        display: none;
+    }
+    .container-img{
+        background-image: url('./img/layer.png');
+        width: 397px;
+        height: 380px;
+        background-repeat: no-repeat;
+        margin-top: 60px;
+        margin-left: 50px;
+        display: flex;
+    }
+    .img-items {
+        position: relative;
+        width: 140px;
+        height: 325px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-left: 55px;
+    }
+    #img1{
+        width: 140px;
+        height: 154px;
+        padding-bottom: 20px;
+    }
+    .img-items2{
+        position: relative;
+        margin-top: 95px;
+        margin-left: 15px;
+    }
+    #messicon{
+        position: absolute;
+        top: 140px;
+        right: 110px;
+    }
+    #usericon{
+        position: absolute;
+        top: 250px;
+        right: 50px;
+    }
+    #place{
+        position: absolute;
+        top: 150px;
+        left: 100px;
+    }
+    .body-container{
+        display: block;
+        text-align: center;
+    }
+    .body-items {
+        display: flex;
+        flex-direction: row;
+        width: 224px;
+        height: 56px;
+        color: #F85E9F;
+        font-size: 14px;
+        font-weight: 700;
+        align-items: center;
+        justify-content: center;
+        margin-left: 170px;
+        background-color: #faf4f4;
+        border-radius: 100px;
+    }
+    h1, span{
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48px;
+    }
+    .button-button {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 24px;
+    }
+    button{
+        width: 398px;
+        height: 65px;
+        border-radius: 100px;
+        border: none;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    button:hover {
+        background-color:#F85E9F !important;
+        color: white;
+    }
+}

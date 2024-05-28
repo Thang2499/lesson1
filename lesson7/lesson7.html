@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //câu 2
+        // var S = 12345;
+        //     let gio = (S - S % 3600) / 3600;
+        //     let phut = ((S % 3600) - (S % 3600) % 60) / 60;
+        //     let giay = S - phut * 60 - gio * 3600;
+        //     let result =  gio + " giờ, " + phut + " phút, " + giay + " giây";
+        //     console.log(result)
+        // function math(){
+        //     let S = document.getElementById("second").value;
+        //     let gio = (S - S % 3600) / 3600;
+        //     let phut = ((S % 3600) - (S % 3600) % 60) / 60;
+        //     let giay = S - phut * 60 - gio * 3600;
+        //     document.getElementById("result").innerHTML = gio + " giờ, " + phut + " phút, " + giay + " giây";
+        // }
+        //         <input type="number" id="second">
+        //         <button type="button" onclick="math()">chuyển đổi</button>
+        //         <p id="result"></p>
+        //------------------------------------------------------------------
+        // câu 1
+        // function math() {
+        //     let L = parseInt(document.getElementById("_length").value);
+        //     var W = parseInt(document.getElementById("_width").value);
+        //     var chuvi = 2 * (L + W);
+        //     let dientich = L * W;
+        //     document.getElementById("result").innerHTML = " Chu vi = " + chuvi + "<br>" + " Diện tích= " + dientich;
+        //     <input type="number" id="_length">
+        //         <input type="number" id="_width">
+        //             <button type="button" onclick="math()">chuyển đổi</button>
+        //             <p id="result"></p>
+        // }
+        //------------------------------------------------------------------
+        //câu 3
+        // function math() {
+        //     let L = parseInt(document.getElementById("_length").value);
+        //     let W = parseInt(document.getElementById("_width").value);
+        //     var luythua = Math.pow(L, W);
+        //     document.getElementById("result").innerHTML = L + " ^ " + W + " = " + luythua;
+        //     <input type="number" id="_length">
+        //         <input type="number" id="_width">
+        //             <button type="button" onclick="math()">chuyển đổi</button>
+        //             <p id="result"></p>
+        // }
+        //------------------------------------------------------------------
+        //câu 4
+        // function math() {
+        //     let L = parseInt(document.getElementById("_length").value);
+        //     let W = parseInt(document.getElementById("_width").value);
+        //     let N = parseInt(document.getElementById("_sum").value);
+        //     var trungbinhcong = (L + W + N) / 3;
+        //     document.getElementById("result").innerHTML = "trung bình cộng của " +
+        //         "(" + L + "+" + W + "+" + N + ")" + "/3" + "=" + trungbinhcong;
+        //     <input type="number" id="_length">
+        //         <input type="number" id="_width">
+        //             <input type="number" id="_sum">
+        //                 <button type="button" onclick="math()">chuyển đổi</button>
+        //                 <p id="result"></p>
+        // }
+        //------------------------------------------------------------------
+        //câu 6
+        // function math() {
+        //     let L = parseInt(document.getElementById("_length").value);
+        //     let W = parseInt(document.getElementById("_width").value);
+        //     let N = parseInt(document.getElementById("_sum").value);
+        //     if (L > W, L > N) {
+        //         document.getElementById("result").innerHTML = "true";
+        //     } else {
+        //         document.getElementById("result").innerHTML = "false";
+        //     }
+        // }
+        // <input type="number" id="_length">
+        //     <input type="number" id="_width">
+        //         <input type="number" id="_sum">
+        //             <button type="button" onclick="math()">chuyển đổi</button>
+        //             <p id="result"></p>
+        //------------------------------------------------------------------
+        //câu 7
+        // function math() {
+        //     let L = parseInt(document.getElementById("_length").value);
+        //     let W = parseInt(document.getElementById("_width").value);
+        //     if (L == W) {
+        //         document.getElementById("result").innerHTML = "true";
+        //     } else {
+        //         document.getElementById("result").innerHTML = "false";
+        //     }
+        // }
+        // <input type="text" id="_length">
+        //     <input type="text" id="_width">
+        //         <button type="button" onclick="math()">chuyển đổi</button>
+        //         <p id="result"></p>
+        //------------------------------------------------------------------
+        //câu 8
+        // function math() {
+        //     let L = parseInt(document.getElementById("_length").value);
+        //     if (L >= 0) {
+        //         document.getElementById("result").innerHTML = "true";
+        //     } else {
+        //         document.getElementById("result").innerHTML = "false";
+        //     }
+        // }
+        // <input type="number" id="_length">
+        //     <button type="button" onclick="math()">chuyển đổi</button>
+        //     <p id="result"></p>
+         //------------------------------------------------------------------
+        //câu 9
+        function math() {
+            let L = parseInt(document.getElementById("_length").value);
+            if (L % 400 == 0 || L %4 ==0 && L %100 !=0) {
+                document.getElementById("result").innerHTML = "true";
+            } else {
+                document.getElementById("result").innerHTML = "false";
+            }
+        }
+    </script>
+    <input type="number" id="_length">
+    <button type="button" onclick="math()">chuyển đổi</button>
+    <p id="result"></p>
+</body>
+
+</html>

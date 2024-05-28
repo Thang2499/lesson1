@@ -1,0 +1,139 @@
+@media(min-width:820px){
+        .container-header{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content:space-between;
+        }
+        .header-items {
+            display: flex;
+            width: 40px;
+            height: 40px;
+            align-items: center;
+        }
+        .screen{
+            display: none;
+        }
+        .login{
+            width: 250px;
+            height: 49px;
+        }
+        .container-menu{
+            display: flex;
+            justify-content:space-around;
+            width: 500px;
+        }
+        .menu-items {
+            display: flex;
+            width: 490px;
+            justify-content: space-around;
+            list-style-type: none;
+            font-size: 16px;
+        }
+        #button-login , #button-signup{
+            width: 120px;
+            height: 49px;
+            border-radius: 100px;
+            padding: 16px 32px;
+            border: none;
+        }
+        .container-img{
+            display: flex;
+            justify-content: center;
+            background-image: url('./img/tablet.png');
+            width: 772px;
+            height: 680px;
+            background-repeat: no-repeat;
+            margin-top: 35px;
+            margin-right: 170px;
+        }
+        .img-items {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            width: 410px;
+            height: 532px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 80px;
+            margin-left: 135px;
+        }
+        #img1{
+            width: 220px;
+            height: 250px;
+            padding-bottom: 20px;
+        }
+        .img-items2{
+            justify-content: center;
+            position: relative;
+            margin-top: 170px;
+            margin-right: 175px;
+        }
+        #hinh3{
+            width: 200px;
+            height: 330px;
+        }
+        #messicon{
+            position: absolute;
+            top: 230px;
+            right: 215px;
+        }
+        #usericon{
+            position: absolute;
+            top: 390px;
+            right: 130px;
+        }
+        #place{
+            position: absolute;
+            top: 220px;
+            left: 160px;
+        }
+        .body-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 300px;
+            height: 450px;
+            margin-right: 150px;
+            margin-top: 150px;
+        }
+        .body-items {
+            display: flex;
+            flex-direction: row;
+            width: 170px;
+            height: 46px;
+            color: #F85E9F;
+            font-size: 15px;
+            font-weight: 700;
+            align-items: center;
+            justify-content: center;
+            background-color: #faf4f4;
+            border-radius: 100px;
+        }
+        h1, span{
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 48px;
+        }
+        .button-button {
+            display: flex;
+            padding-top: 30px;
+            align-items: center;
+            gap: 24px;
+        }
+        #button-footer , #button-footer-1{
+            width: 141px;
+            height: 49px;
+            border-radius: 100px;
+            border: none;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        button:hover {
+            background-color:#F85E9F !important;
+            color: white;
+        }
+        .fullscreen-container{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+}

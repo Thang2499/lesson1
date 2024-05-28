@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lesson6-phone.css">
+    <link rel="stylesheet" href="./tablet.css">
+    <link rel="stylesheet" href="./fullscreen.css">
+    <style>
+        /* CSS class to set text color to red */
+        .red-text {
+            color: red;
+        }
+
+        .red-text-1 {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-header">
+        <div class="login">
+            <button id="button-login" style="background-color: #FFFFFF;">Log In</button>
+            <button id="button-signup" style="color:white;; background-color: #5D50C6;">Sign up</button>
+        </div>
+        <div class="container-menu">
+            <ul class="menu-items" id="menu">
+                <script>
+
+                    function Item(item, disabled) {
+                        this.item = item;
+                        this.disabled = disabled;
+                    }
+                    const menuItems = [
+                        new Item("Home", false),
+                        new Item("Discover", false),
+                        new Item("Special Deals", true),
+                        new Item("Contact", false)
+                    ];
+
+                    // Get the ul element by its id
+                    const menu = document.getElementById('menu');
+
+                    for (var i = 0; i <= menuItems.length-1; i++) {
+                        const li = document.createElement('li');
+                        li.textContent = menuItems[i].item;
+                        li.classList.add(!menuItems[i].disabled ? 'red-text' : 'red-text-1')
+                        menu.appendChild(li);
+                    }
+
+                </script>
+            </ul>
+        </div>
+        <div class="header-items">
+            <img src="./img/logo.png" alt="logo">
+            <h4>Travlog</h4>
+        </div>
+        <div class="header-items screen">
+            <img src="./img/nav.png" alt="nav">
+        </div>
+    </div>
+    <div class="fullscreen-container">
+        <div class="container-img">
+            <div class="img-items">
+                <img id="img1" src="./img/tablet 1.png" alt="">
+                <img id="img1" src="./img/tablet 2.png" alt="">
+                <img id="messicon" src="./img/Frame 16.png" alt="">
+            </div>
+            <div class="img-items2">
+                <img id="hinh3" src="./img/Rectangle 3.png" alt="">
+                <img id="usericon" src="./img/Frame 17.png" alt="">
+                <img id="place" src="./img/Frame 18.png" alt="">
+            </div>
+        </div>
+        <div class="body-container">
+            <div class="body-items">
+                <p>Explore the world!</p>
+                <img src="./img/work 1.png" style="width: 24px; height: 24px; padding-top: 3px;" alt="">
+            </div>
+            <h1>Travel <span style="color: #F85E9F;">top destination</span> of the world</h1>
+            <p style="opacity: 70%;">We always make our customer happy by providing as many choices as possible </p>
+            <div class="button-button">
+                <button id="button-footer" type="submit" style="color:white;; background-color: #5D50C6;">Get
+                    Start</button>
+                <button id="button-footer-1" type="button" style="background-color: #FFFFFF;">Watch demo</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
