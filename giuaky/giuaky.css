@@ -1,0 +1,106 @@
+.body-color{
+    background-image: linear-gradient(to right, rgba(0,100,150,0.5), rgba(100,230,0,0.8));
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    position: relative;
+}
+#header{
+    margin-top: 7px;
+    margin-right: 7px;
+    font-size: 30px;
+    color: rgb(63, 228, 63);
+    font-weight: bolder; 
+    font-family:sans-serif;
+}
+.body-form{
+    width: 40%;
+    height: 500px;
+    text-align: center;
+    background-color: white;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    /* align-items: center; */
+}
+.form{
+width: 50%;
+height: 90%;
+text-align: start;
+margin-top: 5%;
+display: flex;
+flex-direction: column;
+position: relative;
+}
+input{
+    border: none;
+    height: 10%;
+    border-bottom: 2px solid rgba(100,230,0,0.5) ;
+    outline: none;
+}
+h1{
+    color: rgb(110, 237, 12);
+}
+label{
+    font-weight: bolder;
+    color: gray;
+}
+button{
+    width: 23%;
+    height: 5%;
+    border: none;
+    color: rgba(100,230,0,0.8) ;
+}
+.name{
+    position: absolute;
+    top: 115px;
+    right: 10px;
+}
+.mail{
+    position: absolute;
+    top: 347px;
+    right: 10px;
+}
+.pass{
+    position: absolute;
+    top: 425px;
+    right: 10px;
+}
+img{
+    width: 30%;
+}
+img:hover{
+    filter: brightness(0) saturate(100%) invert(41%) sepia(97%) 
+    saturate(738%) hue-rotate(128deg) brightness(91%) contrast(92%);
+}
+.container-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid;
+    width: 8%;
+    height: 80%;
+    position: absolute; 
+    right: 58%;
+    background-color:  rgb(147, 235, 81);
+    border: none;
+    box-shadow: 5px 5px 5px rgb(125, 134, 135);
+}
+.tag{
+    position: absolute;
+    background-color: rgb(147, 235, 81);
+    padding: 0px 13px;
+    top: 65%;
+    right: 28.9%;
+    rotate: -90deg;
+    color: white;
+    font-size: 15px;
+}
+.tag:hover{
+    rotate: 0deg;
+    background-color: rgb(42, 225, 76);
+}
