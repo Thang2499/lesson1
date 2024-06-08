@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 8</title>
+</head>
+<body>
+    <h1>Lesson 8</h1>
+    <script>
+        //câu 4--------------------------------------------
+        // for(let i=2;i<10;i++){
+        //     for(let j=1;j<=10;j++){
+        //          console.log(`${i} x ${j} =`, i*j)
+        //     }
+        // }
+
+        //câu 1--------------------------------------------
+        // let j =0;
+        // for(let i=0;i<=100;i++){
+        //     j=i+j;
+        // }
+        // console.log(j);
+        
+        //câu 2--------------------------------------------
+        // for(let i=0;i<=100;i++){
+        //     if(i%3 ==0 && i%5==0){
+        //         console.log(i);
+        //     }
+        // }
+
+        //câu 3--------------------------------------------
+        // let n = 5;
+        // let m =1;  
+        // for(var i=1;i<=n;i++){
+        //     m *=i ;
+         
+        // }
+        // console.log(m)
+    //     function myfnc(){
+    //        let so = parseInt(document.getElementById("num").value);
+    //        let so1 = 1;
+    //        for(let i=1; i <= so ;i++){
+    //         so1 *= i;
+    //         document.getElementById("ketqua").innerHTML=so1;
+    //        }
+    //        document.getElementById("ketqua").innerHTML=so1;
+    //     }
+    // <input id="num" type="number">
+    // <button type="button" onclick="myfnc()">Result</button>
+    // <p id="ketqua"></p>
+    function myfnc() {
+    let num = parseInt(document.getElementById("num").value);
+    let m = "";
+    if (num === 0) {
+        m = "0";
+    } else {
+        while (num > 0) {
+            let n = num % 2;
+            m = n + m; 
+            num = Math.floor(num/2 );
+        }
+    }
+    document.getElementById("ketqua").innerHTML =m;
+}
+     </script>
+     <input id="num" type="number">
+     <button type="button" onclick="myfnc()">Result</button>
+     <p id="ketqua"></p>
+</body>
+</html>
