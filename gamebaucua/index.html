@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Game bầu cua</title>
+</head>
+
+<body>
+    <div class="containers">
+        <h1>Game bầu cua</h1>
+        <div  class="rolling-container">
+            <div id="img1"><img src="./img/bau.png" alt=""></div>
+            <div id="img2"><img src="./img/bau.png" alt=""></div>
+            <div id="img3"><img src="./img/bau.png" alt=""></div>
+        </div>
+        <div style="height: 10px;"></div>
+            <div>
+                 <button id="roll-id" class="btn-roll">Quay</button>
+            </div>
+            <div style="height: 10px;"></div>
+            <div  class="six-container six-img">
+                    <div class="data" data-bet="bau">
+                        <img src="./img/bau.png" alt="bau">
+                        <span class="count">0</span>
+                    </div>
+                    <div class="data" data-bet="cua">
+                        <img src="./img/cua.png" alt="cua">
+                        <span class="count">0</span>
+                    </div>
+                    <div class="data" data-bet="tom">
+                        <img src="./img/tom.png" alt="tom">
+                        <span class="count">0</span>
+                    </div>
+                    <div class="data" data-bet="ca">
+                        <img src="./img/ca.png" alt="ca">
+                        <span class="count">0</span>
+                    </div>
+                    <div class="data" data-bet="huou">
+                        <img src="./img/huou.png" alt="huou">
+                        <span class="count">0</span>
+                    </div>
+                    <div class="data" data-bet="ga">
+                        <img src="./img/ga.png" alt="ga">
+                        <span class="count">0</span>
+                    </div>
+            </div>
+            <div>
+                <button onclick=" reset()" id="btn-reset" class="btn-roll">Đặt lại</button>
+            </div>
+            <div id="result"></div>
+
+            <script src="index.js"></script>
+    </div>
+</body>
+
+</html>
